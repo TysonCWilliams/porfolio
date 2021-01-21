@@ -1,11 +1,7 @@
 <template>
   <div class="text-effect home container-fluid" style="width: 100%; position: relative;">
     <div class="container">
-      <div class="row mt-3 ml-5">
-        <!-- Select the text in the preview and type in your own -->
-        <!-- neon style from https://themehero.io (check it out!) -->
-        <!-- neon font copyright https://medialoot.com -->
-
+      <div class="row mt-4" style="justify-content: center">
         <section class="hero-bg hero-content neon-hero neon hero-header" style="height:100%;">
           <div class="hero-text">
             <div class="title">
@@ -32,16 +28,16 @@
           <p class="neon-two">
             Full Stack Software Development
           </p>
+          <div class="row" style="position: relative; width: 100%;">
+            <button class="customButton" @click="navigateTo('/about')">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              ENTER
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="row" style="position: relative; width: 100%;">
-        <button class="customButton" @click="navigateTo('/about')">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          ENTER
-        </button>
       </div>
     </div>
   </div>
@@ -70,7 +66,7 @@ export default {
 body { background-color:#000; }
 .neon-two {
   text-align: center;
-  margin: 80px auto;
+  margin: 10px auto;
   font-family: "Quicksand";
   font-size: 70px;
   text-transform: uppercase;
@@ -79,50 +75,36 @@ body { background-color:#000; }
   -webkit-backface-visibility: hidden;
 }
 
-@-webkit-keyframes pulse {
- from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px #fff,
-               0 0 30px #fff,
-               0 0 40px rgba(255, 255, 255, 0.2),
-               0 0 70px rgba(255, 255, 255, 0.2),
-               0 0 80px rgba(255, 255, 255, 0.2),
-               0 0 100px rgba(255, 255, 255, 0.2),
-               0 0 150px rgba(255, 255, 255, 0.2);
-  }
-  to {
-    text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 20px rgba(255, 255, 255, 0.2),
-               0 0 35px rgba(255, 255, 255, 0.2),
-               0 0 40px rgba(255, 255, 255, 0.2),
-               0 0 50px rgba(255, 255, 255, 0.2),
-               0 0 75px rgba(255, 255, 255, 0.2);
-  }
-}
+// @-webkit-keyframes pulse {
+//  from {
+//     text-shadow: 0 0 10px #fff,
+//                0 0 20px #fff,
+//                0 0 30px #fff,
+//                0 0 40px rgba(255, 255, 255, 0.2),
+//                0 0 70px rgba(255, 255, 255, 0.2),
+//                0 0 80px rgba(255, 255, 255, 0.2),
+//                0 0 100px rgba(255, 255, 255, 0.2),
+//                0 0 150px rgba(255, 255, 255, 0.2);
+//   }
+//   to {
+//     text-shadow: 0 0 5px #fff,
+//                0 0 10px #fff,
+//                0 0 15px #fff,
+//                0 0 20px rgba(255, 255, 255, 0.2),
+//                0 0 35px rgba(255, 255, 255, 0.2),
+//                0 0 40px rgba(255, 255, 255, 0.2),
+//                0 0 50px rgba(255, 255, 255, 0.2),
+//                0 0 75px rgba(255, 255, 255, 0.2);
+//   }
+// }
 
 /* CSS3 Neon Text Effect */
 .hero-bg.neon-hero .title {
-    color: rgba(255, 255, 255, 0);
-    text-shadow: 0em 0em 3em #83ff00,
-                 0em 0em 2em #83ff00,
-                 1px 1px 5px #83ff00,
-                 0px 0px 15px #83ff00,
-                 1px 0px 0px white,
-                -1px 0px 2px rgb(0, 0, 0);
+    color: rgb(10, 248, 2);
+
 }
 .hero-bg.neon-hero .title:hover {
     color: #83ff00;
-    text-shadow: 0em 0em 5em #83ff00,
-                 0em 0em 3em #83ff00,
-                 0em 0em 2em #83ff00,
-                 1px 1px 5px #83ff00,
-                 0px 0px 10px #83ff00,
-                 0px 0px 25px #83ff00,
-                 0px 0px 45px #83ff00,
-                 2px 1px 0px white,
-                -1px 0px 2px rgba(0, 0, 0, .5);
 }
 
 // html, body{
@@ -132,7 +114,7 @@ body { background-color:#000; }
 // }
 
 .hero-bg .title {
-    font-size: 2.5em;
+    font-size: 2.7em;
     letter-spacing: 0px;
     color: #ffffff;
 }
@@ -182,14 +164,14 @@ h6 {
     font-weight: 400
 }
 // .hero-content {
-    // position: relative;
-    // display: -ms-flexbox;
-    // display: flex;
-    // -ms-flex-align: center;
-    // align-items: center;
-    // -ms-flex-pack: center;
-    // justify-content: center;
-    // padding: 0
+//     position: relative;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-align: center;
+//     align-items: center;
+//     -ms-flex-pack: center;
+//     justify-content: center;
+//     padding: 0
 // }
 .hero-bg {
     font-family: Source Sans Pro, Arial, sans-serif;
@@ -358,8 +340,8 @@ h6 {
 }
 
 .home{
-  height: 150vh;
-  width: 150vh;
+  height: 110vh;
+  width: auto;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   background: black;
@@ -401,7 +383,7 @@ $color2: rgb(132, 0, 255);
     content: attr(data-text);
 
     // White, so we can paint them later
-    color: white;
+    // color: white;
 
     // And blur them to create the neon effect with the blend-mode below
     filter: blur(0.02em);
@@ -426,7 +408,6 @@ $color2: rgb(132, 0, 255);
   z-index: 10;
 }
 
-// Add the colors
 .gradient {
   background: linear-gradient(45deg, $color1, $color2);
 
@@ -453,15 +434,17 @@ $color2: rgb(132, 0, 255);
   }
 }
 
-//=== Pen styling, ignore
-
-// Style text
 .neon {
   font: 500 100px 'Lato', sans-serif;
   text-transform: uppercase;
   // text-align: justify;
   justify-content: center;
   margin: 0;
+  font-weight: bold;
+  font: x-large;
+  font-style: normal;
+  text-shadow: #83ff00;
+  box-shadow: transparent;
 
   &:focus { outline: none; border: 1px dotted rgb(255, 255, 255); }
 }
