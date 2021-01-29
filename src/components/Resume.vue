@@ -1,11 +1,11 @@
 <template>
-  <div class="workHisoryPage">
+  <div class="resume">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WorkHistoryPage',
+  name: 'Resume',
   setup() {
     return {}
   },

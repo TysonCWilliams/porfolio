@@ -17,6 +17,11 @@ const routes = [
     component: loadPage('AboutPage')
   },
   {
+    path: '/resume',
+    name: 'Resume',
+    component: loadPage('ResumePage')
+  },
+  {
     path: '/profile',
     name: 'Profile',
     component: loadPage('ProfilePage'),

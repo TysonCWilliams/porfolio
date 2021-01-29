@@ -39,9 +39,20 @@
           </div>
         </div>
       </div>
+      <div class="navbar" style="justify-content: space-between;">
+        <button class="btn my-links ml-5">
+          <i class="fab fa-github fa-3x"></i>
+        </button>
+        <button class="btn my-links">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </button>
+        <button class="btn my-links mr-5">
+          <i class="fas fa-paper-plane fa-3x"></i>
+        </button>
+      </div>
     </div>
+    <!-- window.open, make a function, pass it a string mail-to link: -->
   </div>
-  <!-- </div> -->
 </template>
 
 <script>
@@ -59,6 +70,35 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@media only screen and (max-width: 300px) {
+
+}
+
+.navbar {
+  // background-color: rgb(36, 35, 35);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 100px;
+  border: thin;
+  border-style: solid;
+  border-color: #03ff18;
+}
+
+button {
+  float: left;
+  display: block;
+  // color: #f2f2f2;
+  text-align: center;
+  // padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.my-links{
+  background-color: #83ff00;
+}
 
 // NOTE Midnight effect
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
@@ -107,24 +147,12 @@ body { background-color:#000; }
     color: #83ff00;
 }
 
-// html, body{
-//   padding:0;
-//   margin:0;
-//   height:100%;
-// }
-
 .hero-bg .title {
     font-size: 2.7em;
     letter-spacing: 0px;
     color: #ffffff;
 }
-// .hero-bg .hero-text {
-//     justify-content: center;
-//     text-align: center;
-// }
-// .hero-bg .hero-image {
-//     align-self: flex-end;
-// }
+
 .hero-bg .hero-content,
 .hero-bg.hero-content {
     flex-direction: row
@@ -163,16 +191,7 @@ h6 {
     font-size: 100%;
     font-weight: 400
 }
-// .hero-content {
-//     position: relative;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -ms-flex-align: center;
-//     align-items: center;
-//     -ms-flex-pack: center;
-//     justify-content: center;
-//     padding: 0
-// }
+
 .hero-bg {
     font-family: Source Sans Pro, Arial, sans-serif;
     overflow: hidden;
@@ -192,40 +211,9 @@ h6 {
     font-weight: 300
 }
 
-/*
- * NEON FONT COPYRIGHT MEDIALOOT, USED WITH SPECIAL PERMISION
- * DO NOT LINK OR DOWNLOAD THIS, BUY FROM HERE: https://medialoot.com/item/neon-tubes-font
-*/
-// @font-face {font-family: 'neon_tubesregular'; src: url('https://medialoot.com/assets/fonts/neontubes-webfont.woff2') format('woff2'), url('https://medialoot.com/assets/fonts/neontubes-webfont.woff') format('woff');font-weight: normal; font-style: normal;}
-/* END COPYRIGHTED FONT */
-
-// .hero-bg .hero-text {
-    // margin: 0;
-    // max-width: 65%;
-    // padding: 0 30px;
-    // position: relative
-// }
-
 .neon {
     font-family: neon_tubesregular, sans-serif
 }
-
-// #attr{
-//   position:absolute;
-//   bottom:10px;
-//   font-family: helvetica, arial, sans-serif;
-//   font-size:14px;
-//   color: rgba(255,255,255,.5);
-//   letter-spacing:.2px;
-// }
-
-// #attr a {
-//   color: rgba(255,255,255,.5);
-// }
-
-// #attr a:hover{
-//     color: rgba(255,255,255,.7);
-// }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 *{
