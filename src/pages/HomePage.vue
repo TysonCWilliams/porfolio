@@ -39,19 +39,18 @@
           </div>
         </div>
       </div>
-      <div class="navbar" style="justify-content: space-between;">
-        <button class="btn my-links ml-5">
+      <div class="navbar" style="justify-content: center;">
+        <button @click="navigateToGithub()" class="btn my-links mr-2">
           <i class="fab fa-github fa-3x"></i>
         </button>
-        <button class="btn my-links">
+        <button @click="navigateToLinkedIn()" class="btn my-links mr-5 ml-5">
           <i class="fab fa-linkedin fa-3x"></i>
         </button>
-        <button class="btn my-links mr-5">
+        <button @click="navigateToEmail()" class="btn my-links ml-2">
           <i class="fas fa-paper-plane fa-3x"></i>
         </button>
       </div>
     </div>
-    <!-- window.open, make a function, pass it a string mail-to link: -->
   </div>
 </template>
 
@@ -61,6 +60,15 @@ export default {
   name: 'Home',
   setup() {
     return {
+      navigateToGithub() {
+        window.open('https://github.com/TysonCWilliams')
+      },
+      navigateToLinkedIn() {
+        window.open('https://www.linkedin.com/in/tysonchadwilliams/')
+      },
+      navigateToEmail() {
+        window.open('mailto:tdub8@me.com')
+      },
       navigateTo(route) {
         router.push(route)
       }
@@ -81,9 +89,6 @@ export default {
   bottom: 0;
   width: 100%;
   margin-bottom: 100px;
-  border: thin;
-  border-style: solid;
-  border-color: #03ff18;
 }
 
 button {
@@ -97,7 +102,8 @@ button {
 }
 
 .my-links{
-  background-color: #83ff00;
+  background-color: #84ff00;
+  color:#080808;
 }
 
 // NOTE Midnight effect

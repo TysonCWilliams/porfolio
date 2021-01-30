@@ -1,12 +1,12 @@
 <template>
-  <div class="resumePage">
-    <h1>HELLO from Resume</h1>
+  <div class="portfolioPage">
+    <h1>HELLO from Portfolio</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ResumePage',
+  name: 'PortfolioPage',
   setup() {
     return {}
   },
