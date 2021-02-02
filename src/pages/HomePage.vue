@@ -29,7 +29,7 @@
             Full Stack Software Development
           </p>
           <div class="row" style="position: relative; width: 100%;">
-            <button class="customButton" @click="navigateTo('/about')">
+            <button class="customButton" @click="navigateTo('/portfolio')">
               <span></span>
               <span></span>
               <span></span>
@@ -81,6 +81,8 @@ export default {
 @media only screen and (max-width: 300px) {
 
 }
+
+.btn:hover {opacity: 1; background-color: #0c0c0c; color: #83ff00;}
 
 .navbar {
   // background-color: rgb(36, 35, 35);
