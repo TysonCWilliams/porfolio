@@ -1,5 +1,6 @@
 <template>
   <div class="portfolioPage" style="position: relative; width: 100%; background-color: black;">
+    <Navbar />
     <div class="row"
          style="align-content: center; justify-content: center;"
     >
@@ -9,17 +10,39 @@
          custom-class"
     >
       <div class="axis">
-        <div class="box">
-          <div class="text">
-            Bug Report
+        <div class="row mr-4 ml-4">
+          <div class="col-12">
+            <div class="box">
+              <div class="text">
+                Bug Report
+              </div>
+              <img src="../assets/img/bug-report.png">
+            </div>
+            <div class="box">
+              <div class="text">
+                Moon-Miner
+              </div>
+              <img src="../assets/img/moon-miner.png">
+            </div>
+            <div class="box">
+              <img src="">
+              <div class="text">
+                Text
+              </div>
+            </div>
           </div>
-          <img src="../assets/img/bug-report.png">
         </div>
         <div class="box">
+          <img src="">
           <div class="text">
-            Moon-Miner
+            Text
           </div>
-          <img src="../assets/img/moon-miner.png">
+        </div>
+        <div class="box">
+          <img src="">
+          <div class="text">
+            Text
+          </div>
         </div>
         <div class="box">
           <img src="">
@@ -50,6 +73,8 @@ export default {
   background: #080808;
   position: relative;
   width: 100%;
+  background-size: cover;
+  justify-content: center;
 }
 
 .box {
@@ -69,6 +94,8 @@ export default {
   vertical-align: top;
   overflow: hidden;
   transform: rotateX(54deg) rotateY(20deg) rotateZ(-38deg);
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .box img {
   width: 100%;

@@ -32,6 +32,11 @@
             About
           </router-link>
         </li>
+        <li class="nav-item">
+          <router-link :to="{ name: 'Resume' }" class="nav-link">
+            Resume
+          </router-link>
+        </li>
       </ul>
       <span class="navbar-text">
         <div class="dropdown">
@@ -93,10 +98,9 @@ a:hover {
 
 .custom-color{
   background-color: rgb(0, 0, 0);
-  /* background-image: url(https://images.unsplash.com/photo-1516069213778-f52c5ac638fc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTZ8fG5pZ2h0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60); */
-  /* border: thin; */
-  /* border-color: rgba(44, 40, 40, 0.308); */
-  /* border-style: solid; */
+  border: thin;
+  border-color: rgb(102, 98, 98);
+  border-style: solid;
   position: sticky;
 }
 </style>
