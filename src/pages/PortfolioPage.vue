@@ -12,43 +12,43 @@
       <div class="axis">
         <div class="row mr-4 ml-4">
           <div class="col-12">
-            <div class="box">
+            <div @click="navigateTo('/projects/bugreport')" class="box">
               <div class="text">
                 Bug Report
               </div>
               <img src="../assets/img/bug-report.png">
             </div>
-            <div class="box">
+            <div @click="navigateTo('/projects/moonminer')" class="box">
               <div class="text">
                 Moon-Miner
               </div>
               <img src="../assets/img/moon-miner.png">
             </div>
-            <div class="box">
-              <img src="">
+            <div @click="navigateTo('/projects/capstone')" class="box">
               <div class="text">
-                Text
+                Capstone-DnD
               </div>
+              <img src="../assets/img/capstone.png">
             </div>
           </div>
         </div>
-        <div class="box">
-          <img src="">
+        <div @click="navigateTo('/projects/taskmaster')" class="box">
           <div class="text">
-            Text
+            Task Master
           </div>
+          <img src="../assets/img/Task-Master.png">
         </div>
-        <div class="box">
-          <img src="">
+        <div @click="navigateTo('/projects/inspire')" class="box">
           <div class="text">
-            Text
+            Inspire
           </div>
+          <img src="../assets/img/inspire.png">
         </div>
-        <div class="box">
-          <img src="">
+        <div @click="navigateTo('/projects/keepr')" class="box">
           <div class="text">
-            Text
+            Keepr
           </div>
+          <img src="../assets/img/keepr.png">
         </div>
       </div>
     </div>
@@ -56,10 +56,15 @@
 </template>
 
 <script>
+import router from '../router'
 export default {
   name: 'PortfolioPage',
   setup() {
-    return {}
+    return {
+      navigateTo(route) {
+        router.push(route)
+      }
+    }
   },
   components: {}
 }
@@ -70,7 +75,7 @@ export default {
  .custom-class {
   margin: 50px 10px;
   text-align: center;
-  background: #080808;
+  background: transparent;
   position: relative;
   width: 100%;
   background-size: cover;
