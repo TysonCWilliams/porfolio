@@ -4,7 +4,9 @@
     <div class="row"
          style="align-content: center; justify-content: center;"
     >
-      <h1>Portfolio</h1>
+      <h1 class="custom-title">
+        Portfolio
+      </h1>
     </div>
     <div class="
          custom-class"
@@ -71,6 +73,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.custom-title{
+  color: rgb(3, 247, 16);
+  font: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
  .custom-class {
   margin: 50px 10px;
