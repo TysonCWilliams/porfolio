@@ -7,7 +7,7 @@
           Moon Miner
         </h5>
         <p class="card-text">
-          Moon-Miner is the 2nd app I've ever created. Its based on the clicker games you can play on the internet. I had a lot of fun with this one. The objective is to Mine a resource by clicking it. Each click in my game represents mining stars out of a black hole. As you progress and reach a certain amount of stars.. power-up's will be available. There are 2 different types of upgrades. Automatic upgrades which allows stars to be mined automatically while also gaining your click count stars. The 2nd upgrade are click upgrades which allows a multiplier for every click. 10x per click for example. The total stars mined will always show as well as your uprgrades being used. I really loved making this I'm excited to go back and make improvements.
+          Moon-Miner is based on the clicker games you can play on the internet. I had a lot of fun with this one. The objective is to Mine a resource by clicking it. Each click in my game represents mining stars out of a black hole. As you progress and reach a certain amount of stars.. power-up's will be available. There are 2 different types of upgrades. Automatic upgrades which allows stars to be mined automatically while also gaining your click count stars. The 2nd upgrade are click upgrades which allows a multiplier for every click. 10x per click for example. The total stars mined will always show as well as your uprgrades being used. I really loved making this I'm excited to go back and make improvements.
         </p>
         <button @click="navigateToMoonMiner()" class="btn btn-success mr-4" style="border: rounded; border-color: silver;">
           Demo
