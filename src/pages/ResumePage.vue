@@ -1,8 +1,8 @@
 <template>
   <div class="resume custom-background">
-    <button @click="navigateToResume()" class="btn btn-success ml-4 mt-4" style="border: rounded; border-color: silver;">
-      <i class="far fa-file"></i>
-      View Resume
+    <button @click="navigateToResume()" class="btn btn-outline-success ml-4 mt-4 custom-font" style="border: rounded;">
+      <i class="far fa-file fa-2x mb-2 mr-1"></i>
+      Resume
     </button>
   </div>
 </template>
@@ -23,22 +23,20 @@ export default {
 
 <style lang="scss" scoped>
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.custom-font{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bolder;
+  font: bolder;
+  font-size: large;
+}
+
 .custom-background{
   background-color: black;
   height: cover;
   width: 100%;
   position: relative;
-}
-
-.custom-card{
-  border: solid;
-  border-style: solid;
-  border-color: chartreuse;
-}
-
-.custom-card-body{
-  color:rgb(35, 247, 7);
-  background-color: rgb(12, 12, 12);
 }
 
 </style>

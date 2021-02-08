@@ -74,10 +74,13 @@ export default {
 
 <style lang="scss" scoped>
 
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+
 .custom-title{
   color: rgb(3, 247, 16);
   font: bolder;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Signika', sans-serif;
+
 }
 
  .custom-class {
@@ -96,7 +99,7 @@ export default {
   position: relative;
   width: 250px;
   height: 140px;
-  background: #080808;
+  background:  #000000;
   margin: 50px 10px;
   box-shadow: white 0 0px 80px 0px;
   -moz-transition: all 0.3s;

@@ -29,12 +29,12 @@
             Full Stack Software Development
           </p>
           <div class="row" style="position: relative; width: 100%;">
-            <button class="customButton" @click="navigateTo('/portfolio')">
+            <button class="customButton custom-title" @click="navigateTo('/portfolio')">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              ENTER
+              PORTFOLIO
             </button>
           </div>
         </div>
@@ -82,6 +82,12 @@ export default {
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+
+.custom-title{
+  font-family: 'Signika', sans-serif;
+}
+
 .btn:hover {opacity: 1; background-color: #0c0c0c; color: #83ff00;}
 
 .navbar {
@@ -122,29 +128,6 @@ body { background-color:#000; }
   -webkit-animation:pulse 1s ease-in-out infinite alternate;
   -webkit-backface-visibility: hidden;
 }
-
-// @-webkit-keyframes pulse {
-//  from {
-//     text-shadow: 0 0 10px #fff,
-//                0 0 20px #fff,
-//                0 0 30px #fff,
-//                0 0 40px rgba(255, 255, 255, 0.2),
-//                0 0 70px rgba(255, 255, 255, 0.2),
-//                0 0 80px rgba(255, 255, 255, 0.2),
-//                0 0 100px rgba(255, 255, 255, 0.2),
-//                0 0 150px rgba(255, 255, 255, 0.2);
-//   }
-//   to {
-//     text-shadow: 0 0 5px #fff,
-//                0 0 10px #fff,
-//                0 0 15px #fff,
-//                0 0 20px rgba(255, 255, 255, 0.2),
-//                0 0 35px rgba(255, 255, 255, 0.2),
-//                0 0 40px rgba(255, 255, 255, 0.2),
-//                0 0 50px rgba(255, 255, 255, 0.2),
-//                0 0 75px rgba(255, 255, 255, 0.2);
-//   }
-// }
 
 /* CSS3 Neon Text Effect */
 .hero-bg.neon-hero .title {
@@ -410,19 +393,6 @@ $color2: rgb(132, 0, 255);
   // Multiply mode will paint only the white text
   mix-blend-mode: multiply;
 }
-
-// .spotlight {
-//   animation: light 5s infinite linear;
-
-//   // These are the lights, color-dodge needs a black bg for optimum effect
-//   background:
-//     radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%,
-//     radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
-//   top: -100%; left: -100%;
-
-//   // Color dodge gives the lights that shimmer effect
-//   mix-blend-mode: color-dodge;
-// }
 
 @keyframes light {
   100% {

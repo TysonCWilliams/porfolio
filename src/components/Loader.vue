@@ -45,9 +45,10 @@
 export default {
   name: 'Loader',
   setup() {
-    return {}
-  },
-  components: {}
+    return {
+
+    }
+  }
 }
 </script>
 
@@ -64,7 +65,7 @@ $time: 1;
    display: flex;
    justify-content: center;
    align-items: center;
-   background:  #090707;
+   background:  #000000;
 }
 
 .dank-ass-loader {

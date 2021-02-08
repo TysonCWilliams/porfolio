@@ -21,20 +21,21 @@
       <span class="navbar-toggler-icon" />
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
+      <i class="fas fa-spinner fa-pulse fa-2x mr-2 custom-icon"></i>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link :to="{ name: 'Home' }" class="nav-link">
-            Home
+          <router-link :to="{ name: 'Home' }" class="nav-link custom-font">
+            /Home/
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link :to="{ name: 'About' }" class="nav-link">
-            About
+          <router-link :to="{ name: 'About' }" class="nav-link custom-font">
+            /About/
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link :to="{ name: 'Resume' }" class="nav-link">
-            Resume
+          <router-link :to="{ name: 'Resume' }" class="nav-link custom-font">
+            /Resume/
           </router-link>
         </li>
       </ul>
@@ -73,6 +74,20 @@ export default {
 </script>
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.custom-font{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bolder;
+  font: bolder;
+  font-size: large;
+}
+
+.custom-icon{
+  color: rgb(15, 247, 7)
+}
+
 .dropdown-menu {
   user-select: none;
   display: block;
@@ -99,7 +114,7 @@ a:hover {
 .custom-color{
   background-color: rgb(0, 0, 0);
   border: thin;
-  border-color: rgb(102, 98, 98);
+  border-color: rgba(102, 98, 98, 0.822);
   border-style: solid;
   position: sticky;
 }
