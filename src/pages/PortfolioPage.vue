@@ -53,6 +53,7 @@
           <img src="../assets/img/keepr.png">
         </div>
       </div>
+      <img src="../assets/img/random.gif" style="width: 600px; height: 140px; opacity: .5;" alt="">
     </div>
   </div>
 </template>
@@ -80,7 +81,6 @@ export default {
   color: rgb(3, 247, 16);
   font: bolder;
   font-family: 'Signika', sans-serif;
-
 }
 
  .custom-class {
