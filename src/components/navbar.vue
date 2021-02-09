@@ -21,15 +21,15 @@
       <span class="navbar-toggler-icon" />
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <i class="fas fa-spinner fa-pulse fa-2x mr-2 custom-icon"></i>
+      <i class="fas fa-spinner fa-pulse fa-2x mr-3 custom-icon"></i>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link :to="{ name: 'Home' }" class="nav-link custom-font">
+          <router-link :to="{ name: 'Home' }" class="nav-link custom-font mr-3 ml-3">
             /Home/
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link :to="{ name: 'About' }" class="nav-link custom-font">
+          <router-link :to="{ name: 'About' }" class="nav-link custom-font mr-3">
             /About/
           </router-link>
         </li>
@@ -82,10 +82,12 @@ export default {
   font-weight: bolder;
   font: bolder;
   font-size: large;
+  text-decoration: underline;
+  text-decoration-color: rgba(192, 192, 192, 0.705);
 }
 
 .custom-icon{
-  color: rgb(15, 247, 7)
+  color: silver;
 }
 
 .dropdown-menu {
@@ -114,7 +116,7 @@ a:hover {
 .custom-color{
   background-color: rgb(0, 0, 0);
   border: thin;
-  border-color: rgba(102, 98, 98, 0.822);
+  border-color: rgba(192, 192, 192, 0.329);
   border-style: solid;
   position: sticky;
 }

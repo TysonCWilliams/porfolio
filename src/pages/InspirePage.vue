@@ -43,6 +43,8 @@ export default {
 
 .custom-title{
   font-family: 'Signika', sans-serif;
+  text-decoration: underline;
+  text-decoration-color: rgba(192, 192, 192, 0.596)
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');

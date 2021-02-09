@@ -4,8 +4,8 @@
     <div class="row"
          style="align-content: center; justify-content: center;"
     >
-      <h1 class="custom-title">
-        Portfolio
+      <h1 class="custom-title mt-5">
+        PORTFOLIO
       </h1>
     </div>
     <div class="
@@ -53,7 +53,7 @@
           <img src="../assets/img/keepr.png">
         </div>
       </div>
-      <img src="../assets/img/random.gif" style="width: 600px; height: 140px; opacity: .5;" alt="">
+      <img src="../assets/img/random.gif" style="width: 600px; height: 140px; opacity: .5; margin-top: 20px;" alt="">
     </div>
   </div>
 </template>
@@ -81,10 +81,12 @@ export default {
   color: rgb(3, 247, 16);
   font: bolder;
   font-family: 'Signika', sans-serif;
+  text-decoration: overline;
+  text-decoration-color: rgb(192, 192, 192);
 }
 
  .custom-class {
-  margin: 50px 10px;
+  margin: 35px 10px;
   text-align: center;
   background: transparent;
   position: relative;
@@ -110,8 +112,8 @@ export default {
   vertical-align: top;
   overflow: hidden;
   transform: rotateX(54deg) rotateY(20deg) rotateZ(-38deg);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .box img {
   width: 100%;

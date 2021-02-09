@@ -29,7 +29,7 @@
             Full Stack Software Development
           </p>
           <div class="row" style="position: relative; width: 100%;">
-            <button class="customButton custom-title" @click="navigateTo('/portfolio')">
+            <button class="customButton custom-title mb-5" @click="navigateTo('/portfolio')">
               <span></span>
               <span></span>
               <span></span>
@@ -37,9 +37,18 @@
               PORTFOLIO
             </button>
           </div>
+          <button @click="navigateToGithub()" class="btn my-links mr-5 ml-5 mt-5">
+            <i class="fab fa-github fa-3x"></i>
+          </button>
+          <button @click="navigateToLinkedIn()" class="btn my-links mr-5 ml-5 mt-5">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </button>
+          <button @click="navigateToEmail()" class="btn my-links ml-5 mr-5 mt-5">
+            <i class="fas fa-paper-plane fa-3x"></i>
+          </button>
         </div>
       </div>
-      <div class="navbar" style="justify-content: center;">
+      <!-- <div class="navbar" style="justify-content: center;">
         <button @click="navigateToGithub()" class="btn my-links mr-2">
           <i class="fab fa-github fa-3x"></i>
         </button>
@@ -49,7 +58,7 @@
         <button @click="navigateToEmail()" class="btn my-links ml-2">
           <i class="fas fa-paper-plane fa-3x"></i>
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -78,7 +87,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 850px) {
 
 }
 
@@ -90,19 +99,9 @@ export default {
 
 .btn:hover {opacity: 1; background-color: #0c0c0c; color: #83ff00;}
 
-.navbar {
-  // background-color: rgb(36, 35, 35);
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 100px;
-}
-
 button {
   float: left;
   display: block;
-  // color: #f2f2f2;
   text-align: center;
   // padding: 14px 16px;
   text-decoration: none;
@@ -121,12 +120,15 @@ body { background-color:#000; }
 .neon-two {
   text-align: center;
   margin: 10px auto;
+  margin-left: 170px;
   font-family: "Quicksand";
   font-size: 70px;
   text-transform: uppercase;
   color: #fff;
   -webkit-animation:pulse 1s ease-in-out infinite alternate;
   -webkit-backface-visibility: hidden;
+  text-decoration: underline;
+  text-decoration-color: rgb(192, 192, 192);
 }
 
 /* CSS3 Neon Text Effect */
@@ -228,7 +230,7 @@ h6 {
     // overflow: hidden;
     margin-right: 20px;
     margin-top: 50px;
-
+    margin-left: 80px;
 }
 .customButton:hover{
     background: #03e9f4;
