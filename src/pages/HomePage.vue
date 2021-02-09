@@ -1,7 +1,8 @@
 <template>
   <div class="text-effect home container-fluid" style="width: 100%; position: relative;">
+    <Navbar />
     <div class="container">
-      <div class="row mt-4" style="justify-content: center">
+      <div class="row mt-2 ml-5" style="justify-content: center;">
         <section class="hero-bg hero-content neon-hero neon hero-header" style="height:100%;">
           <div class="hero-text">
             <div class="title">
@@ -19,9 +20,6 @@
               src="../assets/img/me.png"
               style="width: auto; position: relative; height: 535px;"
             />
-            <!-- <div style="position: absolute; width: 100%; height: 100%;
-            background: radial-gradient(circle at bottom, rgba(223, 1, 171, 0.25) 15%, transparent); top: 0px;"
-            ></div> -->
           </div>
         </div>
         <div class="col-6">
@@ -48,17 +46,6 @@
           </button>
         </div>
       </div>
-      <!-- <div class="navbar" style="justify-content: center;">
-        <button @click="navigateToGithub()" class="btn my-links mr-2">
-          <i class="fab fa-github fa-3x"></i>
-        </button>
-        <button @click="navigateToLinkedIn()" class="btn my-links mr-5 ml-5">
-          <i class="fab fa-linkedin fa-3x"></i>
-        </button>
-        <button @click="navigateToEmail()" class="btn my-links ml-2">
-          <i class="fas fa-paper-plane fa-3x"></i>
-        </button>
-      </div> -->
     </div>
   </div>
 </template>
