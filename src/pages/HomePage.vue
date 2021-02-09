@@ -308,7 +308,7 @@ h6 {
 }
 
 .home{
-  height: 110vh;
+  height: 100vh;
   width: auto;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
