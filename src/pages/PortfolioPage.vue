@@ -132,9 +132,11 @@ export default {
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: white;
+  color: rgb(51, 248, 1);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: silver;
 }
 .box:hover {
   margin: 30px -20px;

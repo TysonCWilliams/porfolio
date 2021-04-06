@@ -26,7 +26,7 @@ export default {
   setup() {
     return {
       navigateToKeepr() {
-        window.open('')
+        window.open('https://keepr-c-deployment.herokuapp.com/#/')
       },
       navigateToGit() {
         window.open('https://github.com/TysonCWilliams/Keepr2')
